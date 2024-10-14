@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: 
-      StackScreen(),
+      // StackScreen(),
 
       // ListViewScreen(),
-      //GridViewApp(),
+      GridViewApp(),
     );
   }
 }
