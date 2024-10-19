@@ -56,12 +56,32 @@ class TouristDestinations extends StatelessWidget {
           SliverAppBar(
             expandedHeight: 250.0,
             floating: false,
+            backgroundColor: const Color.fromARGB(255, 132, 255, 16),
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: const Text("Wisata Banyumas"),
+              title: const Text(
+                "Wisata Banyumas",
+                style: TextStyle(
+                  color : Colors.white,
+                ),
+                ),
               background: Image.network(
-                'https://eventdaerah.kemenparekraf.go.id/storage/app/uploads/public/669/0cd/153/6690cd153a162349133709.jpg',
+                'https://backpackerjakarta.com/wp-content/uploads/2017/07/gunung-slamet-jawa-tengah-1024x797.jpg',
                 fit: BoxFit.cover,
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                },
+                errorBuilder: (context, error, stackTrace) {
+                  return Container(
+                    color: Colors.grey[300],
+                    child: const Center(
+                      child: Icon(Icons.error, color: Colors.red),
+                    ),
+                  );
+                },
               ),
             ),
             actions: [
@@ -101,7 +121,7 @@ class TouristDestinations extends StatelessWidget {
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: Colors.blue,
+              color: const Color.fromARGB(255, 132, 255, 16),
             ),
           ),
           SizedBox(height: 5),
