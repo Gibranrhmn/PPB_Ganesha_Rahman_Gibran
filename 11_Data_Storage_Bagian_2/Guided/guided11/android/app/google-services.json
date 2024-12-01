@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830538868285",
+    "project_id": "praktikumfcm-a650b",
+    "storage_bucket": "praktikumfcm-a650b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830538868285:android:3a9a10fb492c622c0eec54",
+        "android_client_info": {
+          "package_name": "com.example.guided11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaTgGdh00kPE1KbtEMZczau8lcAcLDqkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
