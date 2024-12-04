@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "584538652664",
+    "project_id": "praktikumfcm-f5329",
+    "storage_bucket": "praktikumfcm-f5329.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584538652664:android:a54d82176d62ff2ba6200d",
+        "android_client_info": {
+          "package_name": "com.example.firebase_notifikasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxNc6DLY5_Nr5-Yx_alYBh9Q6szggF8nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
