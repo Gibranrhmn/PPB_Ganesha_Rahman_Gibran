@@ -18,19 +18,19 @@ class CounterController extends GetxController {
 }
 
 class HomePage extends StatelessWidget {
-  // Inisialisasi controller menggunakan Get.put()
-  final CounterController controller = Get.put(CounterController());
-
   @override
   Widget build(BuildContext context) {
+    // Inisialisasi controller menggunakan Get.put() di dalam build
+    final CounterController controller = Get.put(CounterController());
+
     return Scaffold(
-      appBar: AppBar(title: Text("Counter App")),
+      appBar: AppBar(title: const Text("Counter App")),
       body: Center(
         child: Obx(() {
           // Menampilkan nilai counter
           return Text(
             "${controller.counter}", // Mengambil nilai counter reaktif
-            style: TextStyle(fontSize: 48),
+            style: const TextStyle(fontSize: 48),
           );
         }),
       ),
@@ -38,19 +38,13 @@ class HomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            onPressed: () {
-              // Menambah nilai counter
-              controller.increment();
-            },
-            child: Icon(Icons.add),
+            onPressed: controller.increment, // Menambah nilai counter
+            child: const Icon(Icons.add),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           FloatingActionButton(
-            onPressed: () {
-              // Mereset nilai counter
-              controller.reset();
-            },
-            child: Icon(Icons.refresh),
+            onPressed: controller.reset, // Mereset nilai counter
+            child: const Icon(Icons.refresh),
           ),
         ],
       ),
@@ -59,7 +53,7 @@ class HomePage extends StatelessWidget {
 }
 
 void main() {
-  runApp(MaterialApp(
+  runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
